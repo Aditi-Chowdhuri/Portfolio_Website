@@ -1,38 +1,363 @@
-.App {
+#name{
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 10vw;
+  font-weight: 10;
+  margin: 10vh 0 0 0;
+}
+
+.floater{
+  float: left;
+}
+
+#Skills{
+  padding: 2vh 0 0 0;
+  height: 60vh;
+}
+
+#arrowcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin: 20vh 0 0 0;
+  transition: opacity 2s;
+}
+
+.rotator{
+  transform: rotate(180deg);
+}
+
+.arrow{
+  background-color: #ffffff00;
+  padding: 5px 9px 9px 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.arrow:hover{
+  background-color: #ffffff31;
+}
+#social {
+  height: 55px;
+  margin-bottom: 1vh;
+}
+
+/* #github {
+  border-radius: 50%;
+  padding: 10px 10px 5px 10px;
+  background-color: #5c6bc0;
+}
+
+#linkedin {
+  border-radius: 50%;
+  padding: 10px 10px 5px 10px;
+  background-color: #007ab9;
+}
+
+#twitter {
+  border-radius: 50%;
+  padding: 10px 10px 5px 10px;
+  background-color: #03a9f4;
+} */
+
+.space {
+  padding: 0.5vw;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.25s;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+#acont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9vh;
+}
+
+#About {
+  height: 60vh;
+}
+
+#atitle{
+  text-align: center;
+  padding-top: 10vh;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+}
+
+.floater1{
+  float: left;
+  width: 33vw;
+}
+
+#Education{
+  height: 60vh;
+}
+
+#Experience{
+  height: 60vh;
+}
+
+#btncenter{
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Contact{
+  height: 60vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.conhead{
+  text-align: center;
+  padding-top: 10vh;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+  margin-bottom: 10vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cdivs{
+  float: left;
+  width: 48vw;
+  height: 10vh;
+  padding: 0 1vw;
+  color: #a2e2ff;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5vw;
+}
+
+.ctable{
+  margin: 10vh 0;
+  width: 100%;
+  text-align: center;
+}
+.ctable1{
+  width: 100%;
+}
+
+.hoverer{
+  box-shadow: 0 0 20px #FFFFFF00;
+  border-radius: 50%;
+  width: 6vw;
+  transition: box-shadow 0.1s;
+}
+
+.hoverer:hover{
+  box-shadow: 0 0 20px #FFFFFFFF;
+}
+
+.td1{
+  padding: 2vh 10px;
+}
+
+.ehead{
+  text-align: center;
+  padding-top: 10vh;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+  padding-bottom: 3vh;
+}
+
+.ecard{
+  width: 60vw;
+  margin: 3vh auto;
+}
+
+.subhead{
+  color: #a2e2ff;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.sdesc{
+  margin: 3vh 3vw;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.shead{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 5vw;
+  margin-top: 18vh;
+}
+
+#mpic{
+  border-radius: 5%;
+  width: 250px;
+}
+
+#aname{
+  margin-left: 5vw;
+  width: 40vw;
+  color: #a2e2ff;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#contact{
+  height: 65vh;
+  margin-left: 5vw;
+  margin-bottom: 1vh;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#social {
+  margin-left: 5vw;
+}
+
+.bio{
+  margin-left: 5vw;
+  width: 40vw;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+}
+
+#myBtn { /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 0; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Set a background color */
+  color: #FFFFFF; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px;
+  opacity: 0.5; 
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;/* Increase font size */
 }
 
-.App-link {
-  color: #61dafb;
+#myBtn:hover {
+  opacity: 1; /* Add a dark-grey background on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 800px){
+  .cdivs{
+    width: 100vw;
+    font-size: 17px;
+    height: fit-content;
   }
-  to {
-    transform: rotate(360deg);
+  .ctable{
+    margin: 5vh auto;
   }
+  .cdivs table{
+    width: 100%;
+  }
+  .hoverer{
+    width: 60px;
+  }
+  .td1{
+    padding: 1vh 10px;
+  }
+  .ehead{
+    font-size: 7vw;
+  }
+  .conhead{
+    padding-top: 0;
+    margin-top: 10vh;
+    font-size: 10vw;
+  }
+  .subhead{
+    font-size: 20px;
+  }
+  .subdesc{
+    font-size: 2.7vw;
+  }
+  .shead{
+    font-size: 7vw;
+    margin-top: 3vh;
+  }
+  .sdesc{
+    font-size: 15px;
+  }
+  .floater1{
+    width: 100vw;
+  }
+  #Skills{
+    height: 65vh;
+  }
+  #About{
+    height: 65vh;
+  }
+  #name{
+    font-size: 15vw;
+  }
+
+  #mpic{
+    border-radius: 50%;
+    width: 35vw;
+  }
+
+  .btn{
+
+    margin: 0;
+  }
+  
+  .floater{
+    float: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #atitle{
+    padding-top: 3vh;
+    font-size: 10vw;
+  }
+
+  #stitle{
+    padding-top: 3vh;
+    font-size:10vw;
+  }
+
+  #acont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .bio{
+    width: 90vw;
+    margin: 0;
+    text-align: justify;
+  }
+
+  #aname{
+    font-size: 6vw;
+    width: 90vw;
+  }
+
+  #arrowcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin: 10vh 0 0 0;
+    transition: opacity 2s;
+  }
+
 }
