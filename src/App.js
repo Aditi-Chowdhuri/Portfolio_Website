@@ -12,17 +12,17 @@ function App() {
   return (
     <div>
       <Name/>
-      <Scrollarrow link={base+"#About"} link1={base+"#start"} up={false} down={true}/>
+      <Scrollarrow link={base+"Portfolio_Website/#About"} link1={base+"Portfolio_Website/#start"} up={false} down={true}/>
       <About/>
-      <Scrollarrow link={base+"#Skills"} link1={base+"#start"} up={true} down={true}/>
+      <Scrollarrow link={base+"Portfolio_Website/#Skills"} link1={base+"Portfolio_Website/#start"} up={true} down={true}/>
       <Skills/>
-      <Scrollarrow link={base+"#Education"} link1={base+"#About"} up={true} down={true}/>
+      <Scrollarrow link={base+"Portfolio_Website/#Education"} link1={base+"Portfolio_Website/#About"} up={true} down={true}/>
       <Education/>
-      <Scrollarrow link={base+"#Experience"} link1={base+"#Skills"} up={true} down={true}/>
+      <Scrollarrow link={base+"Portfolio_Website/#Experience"} link1={base+"Portfolio_Website/#Skills"} up={true} down={true}/>
       <Experience/>
-      <Scrollarrow link={base+"#Contact"} link1={base+"#Education"} up={true} down={true}/>
+      <Scrollarrow link={base+"Portfolio_Website/#Contact"} link1={base+"Portfolio_Website/#Education"} up={true} down={true}/>
       <Contact/>
-      <Scrollarrow link={base+"#Contact"} link1={base+"#Experience"} up={true} down={false}/>
+      <Scrollarrow link={base+"Portfolio_Website/#Contact"} link1={base+"Portfolio_Website/#Experience"} up={true} down={false}/>
     </div>
   );
 }
