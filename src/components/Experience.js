@@ -6,7 +6,7 @@ class Experience extends React.Component{
             <div id="Experience">
                 <h1 class="ehead">Experience</h1>
                 <div class="ecard">
-                    <h2 class='subhead'>Bank of America, Mumbai  - JULY 2022-Present</h2>
+                    <h2 class='subhead'>Bank of America, Mumbai  - JUNE 2022-JULY 2024</h2>
                     <p class='subdesc'>Software Engineer</p>
                 </div>
                 <div class="ecard">
